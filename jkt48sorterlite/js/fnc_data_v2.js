@@ -2,8 +2,8 @@
 // 2009/1/27 Modified by K-Factory@migiwa
 
 // *****************************************************************************
-str_CenterT = 'Seri!';
-str_CenterB = 'Ulangi Pilihan Terakhir!';
+str_CenterT = 'Tie!';
+str_CenterB = 'Undo Last Chance!';
 
 str_ImgPath = 'img/';
 // 0:順番に　1:昔の
@@ -27,8 +27,8 @@ var maxRows = 35;
 // * タイトル情報（編集可能。最後の行に”,”を付けないようにしてください）
 var int_Colspan = 3;
 var ary_TitleData = [
-  "Defend",
-  "Graduates",
+  "Bertahan",
+  "Lulus",
   "Generasi 1",
   "Generasi 2 (N/A)",
   "Generasi 3",
