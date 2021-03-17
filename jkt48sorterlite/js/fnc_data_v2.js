@@ -52,7 +52,7 @@ var ary_CharacterData = [
   //[1,"Nama",                                       [D,G,1,2,3,4,5,6,7,8,9,10], "path foto"]
   [1, "Adriani Elisabeth",                           [0,1,0,0,0,1,0,0,0,0,0,0], "G2/adriani_elizabeth.jpg"],
   [1, "Amaninah Afiqah",                             [0,1,0,0,0,0,0,0,0,1,0,0], "G2/amanina_afiqah.jpg"],
-  [1, "Ariella Callista Ichwan",                     [1,0,0,0,0,0,0,1,0,0,0,0], "D/Ariel.jpg"],
+  [1, "Ariella Callista Ichwan",                     [1,0,0,0,0,0,0,1,0,0,0,0], "D/ariel.jpg"],
   [1, "Azizi Asadel",                                [1,0,0,0,0,0,0,0,1,0,0,0], "D/Zee.jpg"],
   [1, "Cindy Hapsari Maharani Pujiantoro Putri",     [1,0,0,0,0,1,0,0,0,0,0,0], "D/Cindy.jpg"],
   [1, "Diani Amalia",                                [0,1,0,0,0,0,1,0,0,0,0,0], "G2/diani.jpg"],
