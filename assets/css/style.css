@@ -37,7 +37,7 @@ h1, h2, h3, h4, h5, h6 {
   right: 15px;
   bottom: 15px;
   z-index: 99999;
-  background: #1bbca3;
+  background: #fd94b4; 
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -51,7 +51,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .back-to-top:hover {
-  background: #21dfc2;
+  background: #f6c7c7;
   color: #fff;
 }
 
@@ -668,7 +668,7 @@ section {
 .services .icon-box::before {
   content: '';
   position: absolute;
-  background: #aff4e9;
+  background: #fd94b4; 
   right: -60px;
   top: -40px;
   width: 100px;
@@ -679,7 +679,7 @@ section {
 }
 
 .services .icon-box:hover::before {
-  background: #1bbca3;
+  background: #ff467e;
   right: 0;
   top: 0;
   width: 100%;
@@ -695,7 +695,6 @@ section {
   border-radius: 50%;
   width: 60px;
   height: 60px;
-  background: #1bbca3;
   transition: all 0.3s ease-in-out;
 }
 
@@ -730,7 +729,7 @@ section {
 }
 
 .services .icon-box:hover .icon i {
-  color: #1bbca3;
+  background: #ff467e;
 }
 
 /*--------------------------------------------------------------
@@ -1377,7 +1376,7 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #344341;
+  background: #f12b6b; 
   padding: 0 0 30px 0;
   color: #fff;
   font-size: 14px;
