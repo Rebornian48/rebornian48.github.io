@@ -27,12 +27,9 @@ var maxRows = 35;
 // * タイトル情報（編集可能。最後の行に”,”を付けないようにしてください）
 var int_Colspan = 3;
 var ary_TitleData = [
-  "Team J",
-  "Team K3",
-  "Team T",
-  "Academy Class A",
-  "Academy Class B",
-  "Graduates",
+  "Member",
+  "Eks Member (Spesial)",
+  "Eks Member",
   "Generasi 1",
   "Generasi 2",
   "Generasi 3",
@@ -52,7 +49,8 @@ var ary_TitleData = [
 //   "キャラクター名", "画像（空白の場合、キャラクター名が使用されます）"
 //                                      [1,2,3,4,5,6,7,8,9,
 var ary_CharacterData = [
-  [1, "Adriani Elisabeth",           [1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0], "J/adriani_elizabeth.jpg"],
+  //[1,"Nama",                                       [M,S,X,1,2,3,4,5,6,7,8,9,10], "path foto"]
+  [1, "Adriani Elisabeth",                           [0,1,0,0,0,0,1,0,0,0,0,0,0],  "J/adriani_elizabeth.jpg"],
   [1, "Amaninah Afiqah",           [1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0], "J/amanina_afiqah.jpg"],
   [1, "Ariella Callista Ichwan",    [1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0], "J/ariel.jpg"],
   [1, "Azizi Asadel",      [1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0], "J/azizi_asadel.jpg"],
