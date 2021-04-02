@@ -1,22 +1,20 @@
-# JKT48 Sorter
+# JKT48 Song Sorter
 
-http://yssctmr.github.io/jktsorter
+Versi 1.2
+- Foto album sudah semua (completed)
+- Data yang dimasukkan sampai sekarang sebanyak 251 lagu dengan 16 kategori (Single Senbatsu dan Original Akustik, Undergirls, dan 14 Setlist)
 
-Version 1.3 (Warsaw)
-- Update Profil Picture terbaru
-- Update Gen 9.
+Versi 1.1
+- Foto album yang sudah diupdate adalah foto album setlist
+- Data yang dimasukkan di versi ini menjadi sebanyak 175 lagu dengan 11 kategori (Single Senbatsu dan Original Akustik, Undergirls, dan 9 Setlist lainnya)
 
-version 1.2 (Vladivostok)
-- Update Graduation 10 Member (Kyla, 8 member, Reva Adriana)
-- Rachel, Michelle, Vienny. dimasukkan ke kategori Graduation tapi masih muncul di sorting team. Akan diupdate masing-masing 6 Januari, 19 Januari, 24 Februari)
-- Gen 9 dan Iris belum dimasukkan karena belum ada di web Academy
-- Shuffle Surabaya Desember 2019
-- Update foto beberapa member agar sesuai isshou Team
+Versi 1.0
+- Data dimodifikasi untuk menampilkan judul lagu JKT48
+- Belum ada foto album (akan diupdate di kemudian waktu)
+- Data yang dimasukkan adalah sebanyak 83 lagu dengan 5 kategori (Single, Undergirls, Setlist Pajama Drive, Setlist Ramune no Nomikata, dan Setlist Idol no Yoake)
 
-### to do
-
-* none
-
+Versi 1.0 alpha
+- Data diambil dari https://github.com/yssctmr/jktsorter
 
 ------------------------------------
-Cloned from: https://github.com/sakurasort/sakurasort
+Cloned from: https://github.com/yssctmr/jktsorter

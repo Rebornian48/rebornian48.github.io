@@ -23,6 +23,7 @@
 		<script type="text/javascript" src="js/fnc_data_v2.js"></script>
 		<script type="text/javascript" src="js/op.js"></script>
 		<script type="text/javascript" src="js/src.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.5/dist/html2canvas.min.js"></script>
 		<link rel="stylesheet" type="text/css" href="css/kcs_style.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="shortcut icon" href="img/sg.png" />
@@ -92,14 +93,13 @@
 		<table id="optTable" align="center" width="450"></table><br>
 
 		<div id="ranTable" width="640px" class="tb" style="display:none;" align="center">
-			<div>
 				<form>
 					<input id="btn-rawtext" value="Raw Text Results" onclick="OpenWnd()" type="button">
-				</form>
-			</div>
+					<!-- <input id="btn-ss" value="Screenshot" onclick="takeshot()" type="button"> -->
+				</form> 
 		</div>
 
-		<div class="style4" id="resultField" style="text-align:center;"><br></div>
+		<div class="style4" id="resultField" style="text-align:center;"></div>
 	</body>
 	<audio loop autoplay>
 		<source src="./mp3/music.mp3" type="audio/mpeg">

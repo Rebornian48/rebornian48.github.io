@@ -1,22 +1,15 @@
-# JKT48 Sorter
+# JKT48 Member Sorter
 
-http://yssctmr.github.io/jktsorter
+Version 1.0
+- Data dimodifikasi untuk :
+-- 33 Member yang Bertahan
+-- 26 Member yang Terkena Restrukturisasi
+-- 130 Member yang telah lulus sebelumnya
+- Foto kabesha diperbarui dengan foto kabesha new era (untuk 33 Member yang Bertahan)
 
-Version 1.3 (Warsaw)
-- Update Profil Picture terbaru
-- Update Gen 9.
-
-version 1.2 (Vladivostok)
-- Update Graduation 10 Member (Kyla, 8 member, Reva Adriana)
-- Rachel, Michelle, Vienny. dimasukkan ke kategori Graduation tapi masih muncul di sorting team. Akan diupdate masing-masing 6 Januari, 19 Januari, 24 Februari)
-- Gen 9 dan Iris belum dimasukkan karena belum ada di web Academy
-- Shuffle Surabaya Desember 2019
-- Update foto beberapa member agar sesuai isshou Team
-
-### to do
-
-* none
+Versi 1.0 alpha
+- Data diambil dari https://github.com/yssctmr/jktsorter
 
 
 ------------------------------------
-Cloned from: https://github.com/sakurasort/sakurasort
+Cloned from: http://yssctmr.github.io/jktsorter
