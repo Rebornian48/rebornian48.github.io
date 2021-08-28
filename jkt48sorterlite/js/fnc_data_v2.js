@@ -81,7 +81,7 @@ var ary_CharacterData = [
   [1, "Shani Indira Natio",                          [1,0,0,0,1,0,0,0,0,0,0,0], "D/Shani.jpg"],
   [1, "Shania Gracia",                               [1,0,0,0,1,0,0,0,0,0,0,0], "D/Gracia.jpg"],
   [1, "Yessica Tamara",                              [1,0,0,0,0,0,0,0,1,0,0,0], "D/Chika.jpg"],
-  [1, "Zahra Nur",                                   [1,0,0,0,0,0,0,0,0,1,0,0], "D/Ara.jpg"],
+  /*[1, "Zahra Nur",                                   [1,0,0,0,0,0,0,0,0,1,0,0], "D/Ara.jpg"],*/
   
   //Team T
   //[1,"Nama",                                       [D,G,1,2,3,4,5,6,7,8,9,10], "path foto"]
