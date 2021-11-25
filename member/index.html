@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>jQuery numberAnimate.js Plugin Demo</title>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/flatly/bootstrap.min.css" rel="stylesheet">
+        <style type="text/css">
+            #value,#years {
+                font-size: 50px;
+            }
+        </style>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    </head>
+    <body>
+        <div align="center">
+            <div id="value">0</div>
+            Member
+            <div id="years">0</div>
+            Generasi
+        </div>
+    </body>
+    <script type="text/javascript">
+        function animateValue(id, start, end, duration) {
+            if (start === end) return;
+            var range = end - start;
+            var current = start;
+            var increment = end > start? 1 : -1;
+            var stepTime = Math.abs(Math.floor(duration / range));
+            var obj = document.getElementById(id);
+            var timer = setInterval(function() {
+                current += increment;
+                obj.innerHTML = current;
+                if (current == end) {
+                    clearInterval(timer);
+                }
+            }, stepTime);
+        }
+        animateValue("value", 0, 31, 500);
+        animateValue("years", 0, 10, 500);
+    </script>
+</html>
