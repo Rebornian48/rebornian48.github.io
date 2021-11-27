@@ -86,7 +86,7 @@ var ary_CharacterData = [
   [1, "Shani Indira Natio",                          [1,0,0,0,0,1,0,0,0,0,0,0,0], "M/shani_indira_natio.jpg"],
   [1, "Yessica Tamara",                              [1,0,0,0,0,0,0,0,0,1,0,0,0], "M/yessica_tamara.jpg"],
   [1, "Zahra Nur",                                   [0,0,1,0,0,0,0,0,0,0,1,0,0], "M/zahra_nur.jpg"],
-  [1, "Amirah Fatin",                                [1,0,0,0,0,0,0,0,0,0,1,0,0], "M/amirah_fatin.jpg"],
+  [1, "Amirah Fatin",                                [0,0,1,0,0,0,0,0,0,0,1,0,0], "M/amirah_fatin.jpg"],
   [1, "Aurel Mayori",                                [0,1,0,0,0,0,0,0,0,1,0,0,0], "M/aurel_mayori.jpg"],
   [1, "Cornelia Vanisa",                             [1,0,0,0,0,0,0,0,0,0,1,0,0], "M/cornelia_vanisa.jpg"],
   [1, "Dhea Angelia",                                [1,0,0,0,0,0,0,0,0,1,0,0,0], "M/dhea_angelia.jpg"],

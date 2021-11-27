@@ -85,7 +85,6 @@ var ary_CharacterData = [
   
   //Team T
   //[1,"Nama",                                       [D,G,1,2,3,4,5,6,7,8,9,10], "path foto"]
-  [1, "Amira Fatin",                                 [1,0,0,0,0,0,0,0,0,1,0,0], "D/Mira.jpg"],
   [1, "Aurel Mayori",                                [0,1,0,0,0,0,0,0,1,0,0,0], "G2/aurel_mayori.jpg"],
   [1, "Cornelia Vanisa",                             [1,0,0,0,0,0,0,0,0,1,0,0], "D/Oniel.jpg"],
   [1, "Dhea Angelia",                                [1,0,0,0,0,0,0,0,1,0,0,0], "D/Dey.jpg"],
