@@ -7,7 +7,7 @@
         <title>Data Member JKT48</title>
         <link href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/flatly/bootstrap.min.css" rel="stylesheet">
         <style type="text/css">
-            #total,#active,#years {
+            #total,#active,#gen,#week,#day {
                 font-size: 50px;
             }
         </style>
@@ -19,8 +19,12 @@
             Total Member
             <div id="active">0</div>
             Member Aktif
-            <div id="years">0</div>
+            <div id="gen">0</div>
             Generasi
+            <div id="week">32</div>
+            Member
+            <div id="day">27</div>
+            November
         </div>
     </body>
     <script type="text/javascript">
@@ -41,6 +45,8 @@
         }
         animateValue("total", 0, 200, 500);
         animateValue("active", 0, 31, 500);
-        animateValue("years", 0, 10, 500);
+        animateValue("week", 32, 31, 800);
+        animateValue("day", 27, 28, 800);
+        animateValue("gen", 0, 10, 500);
     </script>
 </html>
