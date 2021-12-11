@@ -5,7 +5,7 @@
 str_CenterT = 'Tie!';
 str_CenterB = 'Undo last choice';
 
-str_ImgPath = 'img/';
+str_ImgPath = '../sorter/img/';
 // 0:順番に　1:昔の
 var bln_ResultMode = 1;
 // 0:テキスト　1:イラスト　2:テキスト＋イラスト
