@@ -1,99 +1,128 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html lang="en">
-	<head>
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-QF6QHSQGFP"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-QF6QHSQGFP"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  gtag('config', 'G-QF6QHSQGFP');
-</script>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<meta http-equiv="Content-Script-Type" content="text/javascript">
-		<meta http-equiv="Content-Style-Type" content="text/css">
-		<meta http-equiv="pragma" content="no-cache">
-		<meta http-equiv="Cache-Control" content="no-cache">
-		<meta name="author" content="Rebornian48">
-		<title>JKT48 Member Sorter - Tentukan Member Yang Paling Kamu Sayang</title>
-		
-		<script type="text/javascript" src="../sorter/js/mod_k-factory.js"></script>
-		<script type="text/javascript" src="../sorter/js/fnc_main_v3.js"></script>
-		<script type="text/javascript" src="../sorter/js/fnc_datamember.js"></script>
-		<script type="text/javascript" src="../sorter/js/op.js"></script>
-		<script type="text/javascript" src="../sorter/js/src.js"></script>
-		<link rel="stylesheet" type="text/css" href="../sorter/css/kcs_style.css">
-		<link rel="stylesheet" type="text/css" href="../sorter/css/style.css">
+      gtag("config", "G-QF6QHSQGFP");
+    </script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="Content-Script-Type" content="text/javascript" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta name="author" content="Rebornian48" />
+    <title>JKT48 Member Sorter - Tentukan Member Yang Paling Kamu Sayang</title>
+
+    <script type="text/javascript" src="../sorter/js/mod_k-factory.js"></script>
+    <script type="text/javascript" src="../sorter/js/fnc_main_v3.js"></script>
+    <script
+      type="text/javascript"
+      src="../sorter/js/fnc_datamember.js"
+    ></script>
+    <script type="text/javascript" src="../sorter/js/op.js"></script>
+    <script type="text/javascript" src="../sorter/js/src.js"></script>
+    <link rel="stylesheet" type="text/css" href="../sorter/css/kcs_style.css" />
+    <link rel="stylesheet" type="text/css" href="../sorter/css/style.css" />
     <link rel="shortcut icon" href="../assets/img/logo.png" />
-	</head>
+  </head>
 
-	<body onload="startup()">
+  <body onload="startup()">
+    <div id="menubar">
+      <div class="menu-item menu-link" id="menu-restart"><p>Restart</p></div>
+      <div class="menu-item">
+        <p>Battle No. <span id="lblCount">-</span></p>
+      </div>
+      <div class="menu-item">
+        <p><span id="lblProgress">0</span>% sorted</p>
+      </div>
+      <a href="https://github.com/Rebornian48/" target="_blank">
+        <div class="menu-item menu-link menu-right"><p>Github</p></div>
+      </a>
+      <a href="https://rebornian48.github.io" target="_blank">
+        <div class="menu-item menu-link menu-right"><p>Homepage</p></div>
+      </a>
+      <a href="https://twitter.com/Rebornian48" target="_blank">
+        <div class="menu-item menu-link menu-right"><p>Contact</p></div>
+      </a>
+    </div>
 
-	  <div id="menubar">
-        <div class="menu-item menu-link" id="menu-restart"><p>Restart</p></div>
-        <div class="menu-item"><p>Battle No. <span id="lblCount">-</span></p></div>
-        <div class="menu-item"><p><span id="lblProgress">0</span>% sorted</p></div>
-        <a href="https://github.com/Rebornian48/" target="_blank">
-          <div class="menu-item menu-link menu-right"><p>Github</p></div>
-        </a>
-	    <a href="https://rebornian48.github.io" target="_blank">
-          <div class="menu-item menu-link menu-right"><p>Homepage</p></div>
-        </a>
-        <a href="https://twitter.com/Rebornian48" target="_blank">
-          <div class="menu-item menu-link menu-right"><p>Contact</p></div>
-        </a>
-	  </div>
+    <div align="center">
+      <table id="mainTable">
+        <thead>
+          <tr>
+            <td colspan="5" class="tb_header" align="center">
+              <br /><br />
+              <h1>JKT48 Member Sorter</h1>
+            </td>
+          </tr>
+        </thead>
 
-		<div align="center">
-			<table id="mainTable">
+        <tbody>
+          <tr>
+            <td id="fldLeft" onclick="fnc_Sort(-1);" rowspan="2">
+              <img src="../assets/img/one.png" />
+            </td>
+            <td style="border: 0px; width: 7px" rowspan="2"></td>
+            <td id="fldMiddleT" onclick="fnc_Sort(0);">
+              <p>JKT48 Member Sorter</p>
+              <p>JKT48 One!</p>
+            </td>
+            <td style="border: 0px; width: 7px" rowspan="2"></td>
+            <td id="fldRight" onclick="fnc_Sort(1);" rowspan="2">
+              <img src="../assets/img/one.png" />
+            </td>
+          </tr>
+          <tr>
+            <td id="fldMiddleB" onclick="fnc_Undo();">Click to start!</td>
+          </tr>
+        </tbody>
 
-				<thead>
-					<tr>
-						<td colspan="5" class="tb_header" align="center"><br><br>
-							<h1>JKT48 Member Sorter</h1>
-						</td>
-					</tr>
-				</thead>
+        <tfoot>
+          <tr>
+            <td colspan="3">
+              <div align="center">
+                <br />
+                <input id="optImage" checked="checked" type="checkbox" />
+                <span class="tb_header">Display images while sorting.</span>
+              </div>
+            </td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+    <br />
+    <table id="optTable" align="center" width="450"></table>
+    <br />
 
-				<tbody>
-					<tr>
-						<td id="fldLeft" onclick="fnc_Sort(-1);" rowspan="2"><img src="../assets/img/one.png"></td>
-						<td style="border: 0px; width: 7px;" rowspan="2"></td>
-						<td id="fldMiddleT" onclick="fnc_Sort(0);"><p>JKT48 Member Sorter</p>
-							<p> JKT48 One! </p></td>
-						<td style="border: 0px; width: 7px;" rowspan="2"></td>
-						<td id="fldRight" onclick="fnc_Sort(1);" rowspan="2"><img src="../assets/img/one.png"></td>
-					</tr>
-					<tr>
-						<td id="fldMiddleB" onclick="fnc_Undo();">Click to start!</td>
-					</tr>
-				</tbody>
+    <div
+      id="ranTable"
+      width="640px"
+      class="tb"
+      style="display: none"
+      align="center"
+    >
+      <div>
+        <form>
+          <input
+            id="btn-rawtext"
+            value="Raw Text Results"
+            onclick="OpenWnd()"
+            type="button"
+          />
+        </form>
+      </div>
+    </div>
 
-				<tfoot>
-					<tr>
-						<td colspan="3">
-							<div align="center">
-								<br>
-								<input id="optImage" checked="checked" type="checkbox">
-								<span class="tb_header">Display images while sorting.</span>
-							</div>
-						</td>
-					</tr>
-				</tfoot>
-
-			</table>
-		</div><br>
-		<table id="optTable" align="center" width="450"></table><br>
-
-		<div id="ranTable" width="640px" class="tb" style="display:none;" align="center">
-			<div>
-				<form>
-					<input id="btn-rawtext" value="Raw Text Results" onclick="OpenWnd()" type="button">
-				</form>
-			</div>
-		</div>
-
-		<div class="style4" id="resultField" style="text-align:center;"><br></div>
-	</body>
+    <div class="style4" id="resultField" style="text-align: center"><br /></div>
+  </body>
 </html>
