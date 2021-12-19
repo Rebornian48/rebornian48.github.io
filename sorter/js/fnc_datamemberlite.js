@@ -38,7 +38,7 @@ var ary_TitleData = [
   "Generasi 7",
   "Generasi 8",
   "Generasi 9",
-  "Generasi 10 (N/A)",
+  "Generasi 10",
 ];
 
 // * キャラクター情報（編集可能。最後の行に”,”を付けないようにしてください）
@@ -301,5 +301,43 @@ var ary_CharacterData = [
     "Shinta Devi",
     [0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0],
     "G2/shinta_devi.jpg",
+  ],
+  [
+    1,
+    "Alia Giselle Maharani",
+    [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1],
+    "X/alia.jpg",
+  ],
+  [
+    1,
+    "Amanda Puspita Sukma Mulyadewi",
+    [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1],
+    "X/amanda.jpg",
+  ],
+  [1, "Aurellia", [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1], "X/lia.jpg"],
+  [
+    1,
+    "Calista Alifia Wardhana",
+    [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1],
+    "X/callie.jpg",
+  ],
+  [
+    1,
+    "Gabriela Abigail Mewengkang",
+    [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1],
+    "X/ella.jpg",
+  ],
+  [
+    1,
+    "Indira Putri Seruni",
+    [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1],
+    "X/indira.jpg",
+  ],
+  [1, "Jesslyn Elly", [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1], "X/lyn.jpg"],
+  [
+    1,
+    "Raisha Syifa Wardhana",
+    [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1],
+    "X/raisha.jpg",
   ],
 ];
