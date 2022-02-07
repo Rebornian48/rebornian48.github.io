@@ -1077,4 +1077,12 @@ var ary_CharacterData = [
     [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1],
     "X/raisha.jpg",
   ],
+  [1, "Abieza Syabira", [0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1], "X/abieza.jpg"],
+  [
+    1,
+    "Danessa Valerie Hertanto",
+    [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1],
+    "X/danessa.jpg",
+  ],
+  [1, "Naura Safinatunnajah", [0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1], "X/naura.jpg"],
 ];
