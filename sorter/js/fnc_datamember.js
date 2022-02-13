@@ -65,7 +65,7 @@ var ary_CharacterData = [
   [
     1,
     "Ariella Callista Ichwan",
-    [1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0],
+    [0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0],
     "M/ariel.jpg",
   ],
   [
@@ -84,7 +84,7 @@ var ary_CharacterData = [
   [
     1,
     "Eve Antoinette Ichwan",
-    [1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0],
+    [0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0],
     "M/eve_antoinette.jpg",
   ],
   [

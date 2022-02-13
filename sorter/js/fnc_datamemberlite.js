@@ -62,12 +62,6 @@ var ary_CharacterData = [
     [0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0],
     "G2/amanina_afiqah.jpg",
   ],
-  [
-    1,
-    "Ariella Callista Ichwan",
-    [1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0],
-    "D/Eril.jpg",
-  ],
   [1, "Azizi Asadel", [1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0], "D/Zee.jpg"],
   [
     1,
@@ -76,12 +70,6 @@ var ary_CharacterData = [
     "D/Cindy.jpg",
   ],
   [1, "Diani Amalia", [0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0], "G2/diani.jpg"],
-  [
-    1,
-    "Eve Antoinette Ichwan",
-    [1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0],
-    "D/Eve.jpg",
-  ],
   [1, "Feni Fitriyanti", [1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0], "D/Feni.jpg"],
   [
     1,
