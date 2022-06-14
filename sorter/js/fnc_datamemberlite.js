@@ -124,12 +124,6 @@ var ary_CharacterData = [
   ],
   [
     1,
-    "Anindita Rahma Cahyadi",
-    [1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0],
-    "D/Anin.jpg",
-  ],
-  [
-    1,
     "Fidly Imanda Azzahra",
     [0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0],
     "G2/fidly_immanda_azzahra.jpg",
