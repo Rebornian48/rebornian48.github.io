@@ -174,7 +174,7 @@ var ary_CharacterData = [
   [
     1,
     "Aninditha Rahma Cahyadi",
-    [0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0],
     "M/aninditha_rahma_cahyadi.jpg",
   ],
   [
