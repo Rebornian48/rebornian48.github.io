@@ -77,7 +77,7 @@ var ary_CharacterData = [
   [
     1,
     "Cindy Hapsari Maharani Pujiantoro Putri",
-    [1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0],
+    [0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0],
     "M/cindy_hapsari.jpg",
   ],
   [1, "Diani Amalia", [0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0], "M/diani.jpg"],
