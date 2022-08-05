@@ -567,7 +567,7 @@ var ary_CharacterData = [
     [0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0],
     "M/cindy_yuvia.jpg",
   ],
-  [1, "Della Delila", [0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0], "M/iris.jpg"],
+  [1, "Della Delila", [0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0], "M/della_delila.jpg"],
   [1, "Dellia Erdita", [0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0], "M/dellia.jpg"],
   [
     1,
