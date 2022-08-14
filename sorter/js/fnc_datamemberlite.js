@@ -79,12 +79,6 @@ var ary_CharacterData = [
   ],
   [
     1,
-    "Gabriella Margareth W.",
-    [1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-    "D/Gaby.jpg",
-  ],
-  [
-    1,
     "Nabila Fitriana",
     [0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0],
     "G2/nabila_fitriana.jpg",
@@ -192,12 +186,6 @@ var ary_CharacterData = [
   ],
   [1, "Lulu Salsabila", [1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0], "D/Lulu.jpg"],
   [1, "Reva Fidela", [1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0], "D/Adel.jpg"],
-  [
-    1,
-    "Tan Zhi Hui Celine",
-    [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0],
-    "D/Celine.jpg",
-  ],
   [
     1,
     "Umega Maulana Sinambela",

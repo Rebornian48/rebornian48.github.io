@@ -114,7 +114,7 @@ var ary_CharacterData = [
   [
     1,
     "Gabriella Margareth W.",
-    [1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0],
     "M/gabriella.jpg",
   ],
   [
@@ -332,7 +332,7 @@ var ary_CharacterData = [
   [
     1,
     "Tan Zhi Hui Celine",
-    [1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0],
+    [0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0],
     "M/tan_zhi_hui_celine.jpg",
   ],
   [
