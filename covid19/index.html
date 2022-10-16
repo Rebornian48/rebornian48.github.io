@@ -26,9 +26,13 @@
         <div id="covid"></div>
         <div>Developed by <a href="https://www.rebornian48.com">@Rebornian48</a> &copy; 2022</div>
         <div>API Developed by <a href="https://github.com/Reynadi531/api-covid19-indonesia-v2">@Reynaldi531</a> &copy; 2022</div>
+        <div>&nbsp;</div>
+        <div class="row">
+            <div class="col-2"><img src="../assets/img/CRTI.svg" width="100px" alt="KPC"></div>
+            <div class="col-2"><h5>Satuan Tugas Penanganan COVID-19</h5></div>
     </div>
     <script>
-        fetch("https://apicovid19indonesia-v2.vercel.app/api/indonesia")
+        fetch("https://apicovid19indonesia-v2.vercel.app/api/indonesia/more")
             .then((response) => {
                 if (response.ok) {
                     return response.json();
@@ -42,22 +46,26 @@
             })
             .catch((error) => console.log("ERROR :", error));
         function display(data) {
-            const sakit = data.positif.toLocaleString('id-ID');
-            const sembuh = data.sembuh.toLocaleString('id-ID');
-            const dirawat = data.dirawat.toLocaleString('id-ID');
-            const mati = data.meninggal.toLocaleString('id-ID');
-            const d = new Date(data.lastUpdate);
+            const sakit = data.total.positif.toLocaleString('id-ID');
+            const sembuh = data.total.sembuh.toLocaleString('id-ID');
+            const dirawat = data.total.dirawat.toLocaleString('id-ID');
+            const mati = data.total.meninggal.toLocaleString('id-ID');
+            const psakit = data.penambahan.positif.toLocaleString('id-ID');
+            const psembuh = data.penambahan.sembuh.toLocaleString('id-ID');
+            const pdirawat = data.penambahan.dirawat.toLocaleString('id-ID');
+            const pmati = data.penambahan.meninggal.toLocaleString('id-ID');
+            const d = new Date(data.total.lastUpdate);
             var monthArray = ['Jan','Feb','Mar','Apr','Mei','Jun','Jul','Ags','Sep','Okt','Nov','Des'];
             var update = d.getDate() + ' ' + monthArray[d.getMonth()] + ' ' + d.getFullYear();
             return (document.getElementById("covid").innerHTML =
                 "<div class='row'><div class='col'><div class='card text-bg-danger mb-3'><div class='card-header'>Sakit</div><div class='card-body'><h5>" +
-                sakit + "</h5></div></div></div>" +
+                sakit + "</h5><div align='right'>" + psakit + "</div></div></div></div>" +
                 "<div class='col'><div class='card text-bg-success mb-3'><div class='card-header'>Sembuh</div><div class='card-body'><h5>" +
-                sembuh + "</h5></div></div></div></div>" +
+                sembuh + "</h5><div align='right'>" + psembuh + "</div></div></div></div></div>" +
                 "<div class='row'><div class='col'><div class='card text-bg-warning mb-3'><div class='card-header'>Dirawat</div><div class='card-body'><h5>" +
-                dirawat + "</h5></div></div></div>" +
+                dirawat + "</h5><div align='right'>" + pdirawat + "</div></div></div></div>" +
                 "<div class='col'><div class='card text-bg-dark mb-3'><div class='card-header'>Meninggal</div><div class='card-body'><h5>" +
-                mati + "</h5></div></div></div></div>" +
+                mati + "</h5><div align='right'>" + pmati + "</div></div></div></div></div>" +
                 "Update terakhir : " + update);
         }
     </script>
