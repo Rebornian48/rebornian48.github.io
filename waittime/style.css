@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body,
+#wrapper {
+    background: #cac8c8;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+html {
+    direction: ltr;
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI,
+        Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+        Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    flex: 1;
+}
+
+main .content-container {
+    max-width: 64rem;
+}
+
+.center {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.content-container {
+    width: 100%;
+    min-width: 25rem;
+    margin: 0 auto;
+    padding: 2rem 4rem;
+    display: flex;
+    text-align: left;
+}
+
+@media (max-width: 900px) {
+    .content-container {
+        flex-direction: column;
+        padding: 2rem 2rem;
+    }
+}
+
+main .content-container section {
+    flex: 1 0 0;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+}
+
+footer {
+    background: #cd0c0d;
+    color: white;
+    font-size: 0.75rem;
+    direction: ltr;
+    min-width: 25rem;
+}
+
+footer .content-container {
+    justify-content: space-between;
+}
+
+p {
+    line-height: 1.5;
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 0 0 2rem 0;
+}
+
+h2 {
+    font-size: 1.25rem;
+    margin: 0 0 1.25rem 0;
+}
+
+.links {
+    color: #cac8c8;
+    margin-top: 1rem;
+    display: flex;
+    align-items: flex-end;
+}
+
+.links a,
+.links a:visited {
+    text-decoration: none;
+    color: #cac8c8;
+}
+
+.logo {
+    display: flex;
+    align-items: flex-end;
+}
+
+.logo .cloudflare-logo {
+    width: 8.75rem;
+    margin-right: 1rem;
+}
