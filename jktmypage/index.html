@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="noindex,nofollow" />
+    <meta name="description" content="">
+    <meta name="keywords" content="JKT48,JKT,Jakarta,indonesia,Rebornian48">
+    <meta name="author" content="Rebornian48">
+    <title>JKT48 | My Page</title>
+    <link rel="stylesheet" href="./style.min.css">
+</head>
+
+<body>
+
+    <div class="header-global">
+        <div class="container">
+            <div class="header-global__pc">
+                <div class="d-flex justify-content-start align-items-end">
+                    <a href="/"><img src="../assets/img/jkt48_logo.svg" onerror="this.onerror=null; this.src='/images/logo.png'"
+                            alt="JKT48 logo"></a>
+                    <h1>JKT48<br>Official Web Site</h1>
+                </div>
+                <div class="header-global__pc--menu">
+                    <div class="header-global__pc--menu__user">
+                        <p><a href="#">My Page</a> / <a href="#">Sign Out</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-global__sp">
+            <div class="container-fluid">
+                <div class="header-global__sp--header">
+                    <p>Hello, Guest</p>
+                </div>
+                <div class="header-global__sp--content">
+                    <h1><a href="/">JKT48</a></h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="nav-global">
+        <div class="container">
+            <ul class="nav-global__list d-flex align-items-center justify-content-between">
+                
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="nav-breadcrumb">
+            <ol class="nav-breadcrumb__list" itemscope itemtype="http://schema.org/BreadcrumbList">
+                <li class="nav-breadcrumb__item" itemprop="itemListElement" itemscope
+                    itemtype="http://schema.org/ListItem">
+                    <a itemtype="http://schema.org/Thing" itemprop="item" href="/">
+                        <span itemprop="name"><i class="fas fa-home"></i> Home</span>
+                    </a>
+                    <meta itemprop="position" content="1" />
+                </li>
+                <li class="nav-breadcrumb__item" itemprop="itemListElement" itemscope
+                    itemtype="http://schema.org/ListItem">
+                    <span itemprop="name">My Page</span>
+                    <meta itemprop="position" content="2" />
+                </li>
+            </ol>
+        </div>
+        <div class="row">
+            <div class="col-lg-9 order-1 order-lg-2 entry-contents__main-area">
+                <h2 class="section-title">My Page</h2>
+                <div class="entry-mypage">
+                    <div class="row mb-5">
+                        <div class="col-12 col-lg-3">
+                            <div class="entry-mypage__profile">
+                                <img src="../assets/img/jkt48_logo.svg" onerror="this.onerror=null; this.src='/images/logo.png'"
+                            alt="JKT48 logo">
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-9">
+                            <div class="entry-mypage__item">
+                                <div class="d-flex">
+                                    <div class="entry-mypage__item--subject">
+                                        Nomor anggota
+                                    </div>
+                                    <div class="entry-mypage__item--content">
+                                        Tahap Uji Coba
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="entry-mypage__item">
+                                <div class="d-flex">
+                                    <div class="entry-mypage__item--subject">
+                                        Jenis keanggotaan
+                                    </div>
+                                    <div class="entry-mypage__item--content">
+                                        Tahap Uji Coba
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="entry-mypage__item">
+                                <div class="d-flex">
+                                    <div class="entry-mypage__item--subject">
+                                        Anggota yang paling disukai<br>(Oshimen)
+                                    </div>
+                                    <div class="entry-mypage__item--content">
+                                        Tidak punya Oshimen
+                                        <a href="#" class="btn btn-block btn-pink btn-sm mt-2">Random Oshi</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="entry-mypage__item">
+                                <div class="d-flex">
+                                    <div class="entry-mypage__item--subject">
+                                        Jumlah kedatangan teater
+                                    </div>
+                                    <div class="entry-mypage__item--content">
+                                        <p id="arrival_count">0 kali</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="entry-mypage__item">
+                                <div class="d-flex">
+                                    <div class="entry-mypage__item--subject">
+                                        Barcode
+                                    </div>
+                                    <div class="entry-mypage__item--content">
+                                        <img src="../assets/img/qrsaweria.png" alt="Barcode" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="entry-mypage__item">
+                                <div class="d-flex">
+                                    <div class="entry-mypage__item--subject">
+                                        Jumlah JKT48 Points
+                                    </div>
+                                    <div class="entry-mypage__item--content">
+                                        <span id="points_1">0 P</span><br />
+                                        Point disimpan sementara <span id="points_2">0 P</span><br>
+                                        (Berlaku hingga selamanya)
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="entry-mypage__item">
+                                <div class="d-flex">
+                                    <div class="entry-mypage__item--subject">
+                                        Bonus Points
+                                    </div>
+                                    <div class="entry-mypage__item--content">
+                                        <span id="bp_1">0 P</span><br />
+                                        Point disimpan sementara <span id="bp_2">0 P</span><br>
+                                        (Berlaku hingga selamanya)
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="entry-mypage__item">
+                                <div class="d-flex">
+                                    <div class="entry-mypage__item--subject">
+                                        Aksi
+                                    </div>
+                                    <div class="entry-mypage__item--content">
+                                        <a href="#" class="btn btn-block btn-pink btn-sm mt-2" id="rp">Random Jumlah Kedatangan dan JKT Points</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 order-2 order-lg-1 entry-contents__nav-area">
+                <!-- News -->
+                <div class="entry-nav">
+                    <h2 class="entry-nav__title">Berita</h2>
+                    <div class="entry-nav__inner">
+                        <div class="entry-nav__inner--item">
+                            <h3><a href="#">Pengumuman Mengenai Dimulainya Proyek Iseng Random JKT48 My Page oleh Rebornian48</a></h3>
+                            <time>13 November 2023</time>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer-global">
+        <div class="container-fluid">
+            <p>Merupakan hasil modifikasi dari halaman My Page pada situs web JKT48 untuk kepentingan iseng belaka. Dimodifikasi oleh Rebornian48 pada tahun 2023.</p>
+        </div>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+
+</html>
