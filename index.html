@@ -1,379 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-QF6QHSQGFP"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-      gtag("config", "G-QF6QHSQGFP");
-    </script>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta http-equiv="Content-Script-Type" content="text/javascript" />
-    <meta http-equiv="Content-Style-Type" content="text/css" />
-    <meta http-equiv="pragma" content="no-cache" />
-    <meta http-equiv="Cache-Control" content="no-cache" />
-    <meta name="author" content="Rebornian48" />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rebornian48</title>
-    <!-- Favicon -->
-    <link
-      rel="icon"
-      href="https://avatars.githubusercontent.com/u/80138640"
-      type="image/x-icon"
-    />
-    <!-- Font Awesome icons -->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v6.5.2/css/all.css"
-    />
-    <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-  <body class="bg-gray-800">
-    <div class="min-h-full">
-      <div class="pb-32">
-        <header class="py-10">
-          <div class="flex items-center gap-x-6"></div>
-          <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <img
-              class="h-16 w-16 rounded-full"
-              src="https://avatars.githubusercontent.com/u/80138640"
-              alt=""
-            />
-            <h1 class="text-3xl font-bold tracking-tight text-white">
-              Rebornian48
-            </h1>
-          </div>
-        </header>
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QF6QHSQGFP"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "G-QF6QHSQGFP");
+  </script>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="Content-Script-Type" content="text/javascript" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta http-equiv="pragma" content="no-cache" />
+  <meta http-equiv="Cache-Control" content="no-cache" />
+  <meta name="author" content="Rebornian48" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rebornian48</title>
+  <!-- Favicon -->
+  <link rel="icon" href="https://avatars.githubusercontent.com/u/80138640" type="image/x-icon" />
+  <!-- Font Awesome icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.6.0/css/all.css">
+  <!-- Core theme CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+  <!-- Parallax Pixel Background Animation -->
+  <section class="animated-background">
+    <div id="stars1"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
+  </section>
+  <!-- End of Parallax Pixel Background Animation -->
+
+  <a id="profilePicture" href="#popup">
+    <img src="https://avatars.githubusercontent.com/u/80138640" alt="Profile Picture">
+  </a>
+
+  <div class="overlay" id="popup">
+    <div class="popup">
+      <div class="popup-photo">
+        <a href="https://avatars.githubusercontent.com/u/80138640" target="_blank">
+          <img src="https://avatars.githubusercontent.com/u/80138640" alt="Profile Picture">
+        </a>
       </div>
-      <main class="-mt-32">
-        <div class="pb-32">
-          <header class="py-10">
-            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-              <h1 class="text-3xl font-bold tracking-tight text-white">
-                Portal Aplikasi
-              </h1>
-            </div>
-          </header>
-        </div>
-      </main>
-      <main class="-mt-32">
-        <div class="mx-auto max-w-7xl px-4 pb-12 sm:px-6 lg:px-8">
-          <div class="rounded-lg bg-white px-5 py-6 shadow sm:px-6">
-            <ul
-              role="list"
-              class="grid grid-cols-1 gap-x-6 gap-y-8 lg:grid-cols-2 xl:gap-x-8"
-            >
-              <li class="overflow-hidden rounded-xl border border-gray-200">
-                <div
-                  class="flex items-center gap-x-4 border-b border-gray-900/5 bg-gray-50 p-6"
-                >
-                  <img
-                    src="https://avatars.githubusercontent.com/u/80138640"
-                    alt="Twitter"
-                    class="h-12 w-12 flex-none rounded-lg bg-white object-cover ring-1 ring-gray-900/10"
-                  />
-                  <div class="text-sm font-medium leading-6 text-gray-900">
-                    Portal Aplikasi
-                  </div>
-                </div>
-                <dl
-                  class="-my-3 divide-y divide-gray-100 px-6 py-4 text-sm leading-6"
-                >
-                  <div class="flex justify-between gap-x-4 py-3">
-                    <dt class="text-gray-500">Link</dt>
-                    <dd class="text-blue-700">
-                      <a href="https://rebornian48.github.io/portalapps"
-                        >https://rebornian48.github.io/portalapps</a
-                      >
-                    </dd>
-                  </div>
-                </dl>
-              </li>
-              <li class="overflow-hidden rounded-xl border border-gray-200">
-                <div
-                  class="flex items-center gap-x-4 border-b border-gray-900/5 bg-gray-50 p-6"
-                >
-                  <img
-                    src="https://rebornian48.github.io/assets/img/sosmed/github-logo.svg"
-                    alt="Github"
-                    class="h-12 w-12 flex-none rounded-lg bg-white object-cover ring-1 ring-gray-900/10"
-                  />
-                  <div class="text-sm font-medium leading-6 text-gray-900">
-                    JKT48 Fans Apps
-                  </div>
-                </div>
-                <dl
-                  class="-my-3 divide-y divide-gray-100 px-6 py-4 text-sm leading-6"
-                >
-                  <div class="flex justify-between gap-x-4 py-3">
-                    <dt class="text-gray-500">Link</dt>
-                    <dd class="text-blue-700">
-                      <a href="https://rebornian48.github.io/fansapps/"
-                        >https://rebornian48.github.io/fansapps/</a
-                      >
-                    </dd>
-                  </div>
-                </dl>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </main>
-        <div class="pb-32">
-          <header class="py-10">
-            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-              <h1 class="text-3xl font-bold tracking-tight text-white">
-                Social Media
-              </h1>
-            </div>
-          </header>
-        </div>
-      <main class="-mt-32">
-        <div class="mx-auto max-w-7xl px-4 pb-12 sm:px-6 lg:px-8">
-          <div class="rounded-lg bg-white px-5 py-6 shadow sm:px-6">
-            <ul
-              role="list"
-              class="grid grid-cols-1 gap-x-6 gap-y-8 lg:grid-cols-2 xl:gap-x-8"
-            >
-              <li class="overflow-hidden rounded-xl border border-gray-200">
-                <div
-                  class="flex items-center gap-x-4 border-b border-gray-900/5 bg-gray-50 p-6"
-                >
-                  <img
-                    src="https://rebornian48.github.io/assets/img/sosmed/x-logo.svg"
-                    alt="Twitter"
-                    class="h-12 w-12 flex-none rounded-lg bg-white object-cover ring-1 ring-gray-900/10"
-                  />
-                  <div class="text-sm font-medium leading-6 text-gray-900">
-                    Twitter
-                  </div>
-                </div>
-                <dl
-                  class="-my-3 divide-y divide-gray-100 px-6 py-4 text-sm leading-6"
-                >
-                  <div class="flex justify-between gap-x-4 py-3">
-                    <dt class="text-gray-500">Link</dt>
-                    <dd class="text-blue-700">
-                      <a href="https://twitter.com/Rebornian48"
-                        >https://twitter.com/Rebornian48</a
-                      >
-                    </dd>
-                  </div>
-                </dl>
-              </li>
-              <li class="overflow-hidden rounded-xl border border-gray-200">
-                <div
-                  class="flex items-center gap-x-4 border-b border-gray-900/5 bg-gray-50 p-6"
-                >
-                  <img
-                    src="https://rebornian48.github.io/assets/img/sosmed/github-logo.svg"
-                    alt="Github"
-                    class="h-12 w-12 flex-none rounded-lg bg-white object-cover ring-1 ring-gray-900/10"
-                  />
-                  <div class="text-sm font-medium leading-6 text-gray-900">
-                    Github
-                  </div>
-                </div>
-                <dl
-                  class="-my-3 divide-y divide-gray-100 px-6 py-4 text-sm leading-6"
-                >
-                  <div class="flex justify-between gap-x-4 py-3">
-                    <dt class="text-gray-500">Link</dt>
-                    <dd class="text-blue-700">
-                      <a href="https://github.com/Rebornian48"
-                        >https://github.com/Rebornian48</a
-                      >
-                    </dd>
-                  </div>
-                </dl>
-              </li>
-              <li class="overflow-hidden rounded-xl border border-gray-200">
-                <div
-                  class="flex items-center gap-x-4 border-b border-gray-900/5 bg-gray-50 p-6"
-                >
-                  <img
-                    src="https://rebornian48.github.io/assets/img/sosmed/Telegram-Logo.svg"
-                    alt="Telegram"
-                    class="h-12 w-12 flex-none rounded-lg bg-white object-cover ring-1 ring-gray-900/10"
-                  />
-                  <div class="text-sm font-medium leading-6 text-gray-900">
-                    Telegram
-                  </div>
-                </div>
-                <dl
-                  class="-my-3 divide-y divide-gray-100 px-6 py-4 text-sm leading-6"
-                >
-                  <div class="flex justify-between gap-x-4 py-3">
-                    <dt class="text-gray-500">Link</dt>
-                    <dd class="text-blue-700">
-                      <a href="https://t.me/rebornian48"
-                        >https://t.me/rebornian48</a
-                      >
-                    </dd>
-                  </div>
-                </dl>
-              </li>
-              <li class="overflow-hidden rounded-xl border border-gray-200">
-                <div
-                  class="flex items-center gap-x-4 border-b border-gray-900/5 bg-gray-50 p-6"
-                >
-                  <img
-                    src="https://rebornian48.github.io/assets/img/sosmed/Instagram_logo_2022.svg"
-                    alt="Telegram"
-                    class="h-12 w-12 flex-none rounded-lg bg-white object-cover ring-1 ring-gray-900/10"
-                  />
-                  <div class="text-sm font-medium leading-6 text-gray-900">
-                    Instagram
-                  </div>
-                </div>
-                <dl
-                  class="-my-3 divide-y divide-gray-100 px-6 py-4 text-sm leading-6"
-                >
-                  <div class="flex justify-between gap-x-4 py-3">
-                    <dt class="text-gray-500">Link</dt>
-                    <dd class="text-blue-700">
-                      <a href="https://instagram.com/rebornian48"
-                        >https://instagram.com/rebornian48</a
-                      >
-                    </dd>
-                  </div>
-                </dl>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </main>
-      <div class="pb-32">
-        <header class="py-10">
-          <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <h1 class="text-3xl font-bold tracking-tight text-white">Donasi</h1>
-          </div>
-        </header>
+      <div class="popup-quote">
+        But... the sensation that I've lost something lingers for a longtime after I wake up.
       </div>
-      <main class="-mt-32">
-        <div class="mx-auto max-w-7xl px-4 pb-12 sm:px-6 lg:px-8">
-          <div class="rounded-lg bg-white px-5 py-6 shadow sm:px-6">
-            <!-- Your content -->
-            <ul
-              role="list"
-              class="grid grid-cols-1 gap-x-6 gap-y-8 lg:grid-cols-2 xl:gap-x-8"
-            >
-              <li class="overflow-hidden rounded-xl border border-gray-200">
-                <div
-                  class="flex items-center gap-x-4 border-b border-gray-900/5 bg-gray-50 p-6"
-                >
-                  <img
-                    src="https://rebornian48.github.io/assets/img/sosmed/saweria-logo.png"
-                    alt="Twitter"
-                    class="h-12 w-12 flex-none rounded-lg bg-white object-cover ring-1 ring-gray-900/10"
-                  />
-                  <div class="text-sm font-medium leading-6 text-gray-900">
-                    Saweria
-                  </div>
-                </div>
-                <dl
-                  class="-my-3 divide-y divide-gray-100 px-6 py-4 text-sm leading-6"
-                >
-                  <div class="flex justify-between gap-x-4 py-3">
-                    <dt class="text-gray-500">Link</dt>
-                    <dd class="text-blue-700">
-                      <a href="https://saweria.co/Rebornian48"
-                        >https://saweria.co/Rebornian48</a
-                      >
-                    </dd>
-                  </div>
-                </dl>
-              </li>
-              <li class="overflow-hidden rounded-xl border border-gray-200">
-                <div
-                  class="flex items-center gap-x-4 border-b border-gray-900/5 bg-gray-50 p-6"
-                >
-                  <img
-                    src="https://rebornian48.github.io/assets/img/sosmed/github-logo.svg"
-                    alt="Github Sponsor"
-                    class="h-12 w-12 flex-none rounded-lg bg-white object-cover ring-1 ring-gray-900/10"
-                  />
-                  <div class="text-sm font-medium leading-6 text-gray-900">
-                    Github Sponsor
-                  </div>
-                </div>
-                <dl
-                  class="-my-3 divide-y divide-gray-100 px-6 py-4 text-sm leading-6"
-                >
-                  <div class="flex justify-between gap-x-4 py-3">
-                    <dt class="text-gray-500">Link</dt>
-                    <dd class="text-blue-700">
-                      <a href="https://github.com/sponsors/Rebornian48/"
-                        >https://github.com/sponsors/Rebornian48/</a
-                      >
-                    </dd>
-                  </div>
-                </dl>
-              </li>
-              <li class="overflow-hidden rounded-xl border border-gray-200">
-                <div
-                  class="flex items-center gap-x-4 border-b border-gray-900/5 bg-gray-50 p-6"
-                >
-                  <img
-                    src="https://rebornian48.github.io/assets/img/sosmed/karyakarsa-logo.png"
-                    alt="Karyakarsa"
-                    class="h-12 w-12 flex-none rounded-lg bg-white object-cover ring-1 ring-gray-900/10"
-                  />
-                  <div class="text-sm font-medium leading-6 text-gray-900">
-                    Karyakarsa
-                  </div>
-                </div>
-                <dl
-                  class="-my-3 divide-y divide-gray-100 px-6 py-4 text-sm leading-6"
-                >
-                  <div class="flex justify-between gap-x-4 py-3">
-                    <dt class="text-gray-500">Link</dt>
-                    <dd class="text-blue-700">
-                      <a href="https://karyakarsa.com/rebornian48"
-                        >https://karyakarsa.com/rebornian48</a
-                      >
-                    </dd>
-                  </div>
-                </dl>
-              </li>
-              <li class="overflow-hidden rounded-xl border border-gray-200">
-                <div
-                  class="flex items-center gap-x-4 border-b border-gray-900/5 bg-gray-50 p-6"
-                >
-                  <img
-                    src="https://rebornian48.github.io/assets/img/sosmed/trakteer-logo-circle.png"
-                    alt="Trakteer"
-                    class="h-12 w-12 flex-none rounded-lg bg-white object-cover ring-1 ring-gray-900/10"
-                  />
-                  <div class="text-sm font-medium leading-6 text-gray-900">
-                    Trakteer
-                  </div>
-                </div>
-                <dl
-                  class="-my-3 divide-y divide-gray-100 px-6 py-4 text-sm leading-6"
-                >
-                  <div class="flex justify-between gap-x-4 py-3">
-                    <dt class="text-gray-500">Link</dt>
-                    <dd class="text-blue-700">
-                      <a href="https://trakteer.id/rebornian48"
-                        >https://trakteer.id/rebornian48</a
-                      >
-                    </dd>
-                  </div>
-                </dl>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </main>
+      <a class="popup-close" onclick="history.back()">&times;</a>
     </div>
-  </body>
+  </div>
+
+  <div id="userName">
+    @Rebornian48
+  </div>
+
+  <div id="links">
+    <a class="link" href="https://github.com/Rebornian48" target="_blank">
+      <i class="fab fa-github">&nbsp;</i>Github
+    </a>
+    <a class="link" href="https://www.instagram.com/Rebornian48" target="_blank">
+      <i class="fab fa-instagram">&nbsp;</i>Instagram
+    </a>
+    <a class="link" href="https://twitter.com/Rebornian48" target="_blank">
+      <i class="fa-brands fa-x-twitter">&nbsp;</i>X (Formerly Twitter)
+    </a>
+    <a class="link" href="https://t.me/Rebornian48" target="_blank">
+      <i class="fa-brands fa-telegram">&nbsp;</i>Telegram
+    </a>
+  </div>
+
+  <div id="links">
+    <a class="link" href="https://github.com/Rebornian48" target="_blank">
+      <i class="fab fa-github">&nbsp;</i>Github
+    </a>
+    <a class="link" href="https://www.instagram.com/Rebornian48" target="_blank">
+      <i class="fab fa-instagram">&nbsp;</i>Instagram
+    </a>
+    <a class="link" href="https://twitter.com/Rebornian48" target="_blank">
+      <i class="fa-brands fa-x-twitter">&nbsp;</i>X (Formerly Twitter)
+    </a>
+    <a class="link" href="https://t.me/Rebornian48" target="_blank">
+      <i class="fa-brands fa-telegram">&nbsp;</i>Telegram
+    </a>
+  </div>
+
+  <div id="links">
+    <a class="link" href="https://saweria.co/Rebornian48" target="_blank">
+      <img src="https://rebornian48.github.io/assets/img/sosmed/saweria-logo.png" class="img-small"> &nbsp;</i>Saweria
+    </a>
+    <a class="link" href="https://trakteer.id/rebornian48" target="_blank">
+      <img src="https://rebornian48.github.io/assets/img/sosmed/trakteer-logo-circle.png" class="img-small">
+      &nbsp;</i>Trakteer
+    </a>
+    <a class="link" href="https://karyakarsa.com/rebornian48" target="_blank">
+      <img src="https://rebornian48.github.io/assets/img/sosmed/karyakarsa-logo.png" class="img-small">
+      &nbsp;</i>Karyakarsa
+    </a>
+    <a class="link" href="https://github.com/sponsors/Rebornian48/" target="_blank">
+      <i class="fab fa-github">&nbsp;</i>Github Sponsor
+    </a>
+  </div>
+</body>
+
 </html>
