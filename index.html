@@ -1,38 +1,185 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="id">
 <head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QF6QHSQGFP"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="refresh" content="4;url=https://jkt48.rebornian48.my.id">
+  <title>Redirecting… — JKT48</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&family=Space+Mono&display=swap" rel="stylesheet">
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+
+    :root{
+      --bg:#0a0a12;
+      --accent:#ff2d55;
+      --accent2:#ff6b8a;
+      --white:#f0eef5;
+      --grey:#6b6880;
     }
-    gtag("js", new Date());
-    gtag("config", "G-QF6QHSQGFP");
-  </script>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <meta http-equiv="Content-Script-Type" content="text/javascript" />
-  <meta http-equiv="Content-Style-Type" content="text/css" />
-  <meta http-equiv="pragma" content="no-cache" />
-  <meta http-equiv="Cache-Control" content="no-cache" />
-  <meta name="author" content="Rebornian48" />
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rebornian48</title>
-  <!-- Favicon -->
-  <link rel="icon" href="https://avatars.githubusercontent.com/u/80138640" type="image/x-icon" />
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    body{
+      background:var(--bg);
+      color:var(--white);
+      font-family:'Outfit',sans-serif;
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      overflow:hidden;
+      position:relative;
+    }
+
+    /* animated background rings */
+    .rings{position:fixed;inset:0;z-index:0;pointer-events:none}
+    .rings span{
+      position:absolute;border-radius:50%;
+      border:1px solid rgba(255,45,85,.12);
+      animation:pulse 6s ease-in-out infinite;
+    }
+    .rings span:nth-child(1){width:500px;height:500px;top:50%;left:50%;transform:translate(-50%,-50%);animation-delay:0s}
+    .rings span:nth-child(2){width:700px;height:700px;top:50%;left:50%;transform:translate(-50%,-50%);animation-delay:1s}
+    .rings span:nth-child(3){width:900px;height:900px;top:50%;left:50%;transform:translate(-50%,-50%);animation-delay:2s}
+    .rings span:nth-child(4){width:1100px;height:1100px;top:50%;left:50%;transform:translate(-50%,-50%);animation-delay:3s}
+
+    @keyframes pulse{
+      0%,100%{opacity:.15;transform:translate(-50%,-50%) scale(1)}
+      50%{opacity:.35;transform:translate(-50%,-50%) scale(1.04)}
+    }
+
+    /* floating particles */
+    .particles{position:fixed;inset:0;z-index:0;pointer-events:none}
+    .particles i{
+      position:absolute;width:3px;height:3px;border-radius:50%;
+      background:var(--accent);opacity:0;
+      animation:float 8s linear infinite;
+    }
+    .particles i:nth-child(1){left:12%;animation-delay:0s;top:110%}
+    .particles i:nth-child(2){left:28%;animation-delay:1.2s;top:110%}
+    .particles i:nth-child(3){left:45%;animation-delay:2.5s;top:110%}
+    .particles i:nth-child(4){left:62%;animation-delay:0.8s;top:110%}
+    .particles i:nth-child(5){left:78%;animation-delay:3.2s;top:110%}
+    .particles i:nth-child(6){left:90%;animation-delay:1.8s;top:110%}
+    .particles i:nth-child(7){left:35%;animation-delay:4s;top:110%}
+    .particles i:nth-child(8){left:55%;animation-delay:2s;top:110%}
+
+    @keyframes float{
+      0%{transform:translateY(0);opacity:0}
+      10%{opacity:.6}
+      90%{opacity:.6}
+      100%{transform:translateY(-110vh);opacity:0}
+    }
+
+    /* main card */
+    .card{
+      position:relative;z-index:1;
+      text-align:center;
+      padding:3.5rem 3rem;
+      border-radius:24px;
+      background:rgba(255,255,255,.03);
+      border:1px solid rgba(255,255,255,.06);
+      backdrop-filter:blur(20px);
+      max-width:420px;width:90%;
+      animation:fadeUp .8s ease-out both;
+    }
+
+    @keyframes fadeUp{
+      from{opacity:0;transform:translateY(30px)}
+      to{opacity:1;transform:translateY(0)}
+    }
+
+    .logo{
+      font-size:2.4rem;font-weight:700;
+      letter-spacing:-1px;
+      margin-bottom:.25rem;
+      background:linear-gradient(135deg,var(--accent),var(--accent2));
+      -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+      animation:fadeUp .8s ease-out .2s both;
+    }
+
+    .subtitle{
+      font-size:.85rem;color:var(--grey);font-weight:300;
+      letter-spacing:2px;text-transform:uppercase;
+      margin-bottom:2.5rem;
+      animation:fadeUp .8s ease-out .35s both;
+    }
+
+    .message{
+      font-size:1.05rem;font-weight:300;line-height:1.7;
+      margin-bottom:2rem;color:rgba(240,238,245,.7);
+      animation:fadeUp .8s ease-out .5s both;
+    }
+
+    /* countdown */
+    .countdown{
+      font-family:'Space Mono',monospace;
+      font-size:2.8rem;font-weight:700;
+      color:var(--white);
+      margin-bottom:2rem;
+      animation:fadeUp .8s ease-out .65s both;
+    }
+    .countdown small{
+      display:block;font-size:.7rem;
+      color:var(--grey);font-weight:400;
+      letter-spacing:3px;text-transform:uppercase;
+      margin-top:.5rem;font-family:'Outfit',sans-serif;
+    }
+
+    /* progress bar */
+    .progress{
+      width:100%;height:3px;border-radius:3px;
+      background:rgba(255,255,255,.06);
+      margin-bottom:2rem;overflow:hidden;
+      animation:fadeUp .8s ease-out .8s both;
+    }
+    .progress-bar{
+      height:100%;border-radius:3px;
+      background:linear-gradient(90deg,var(--accent),var(--accent2));
+      animation:load 4s linear forwards;
+      width:0;
+    }
+    @keyframes load{to{width:100%}}
+
+    /* link */
+    .link{
+      display:inline-flex;align-items:center;gap:.5rem;
+      color:var(--accent);text-decoration:none;
+      font-size:.9rem;font-weight:500;
+      transition:all .3s ease;
+      animation:fadeUp .8s ease-out .95s both;
+    }
+    .link:hover{color:var(--accent2);gap:.75rem}
+    .link svg{transition:transform .3s ease}
+    .link:hover svg{transform:translateX(3px)}
+  </style>
 </head>
-
 <body>
-  <div class="bg-white px-6 py-24 sm:py-32 lg:px-8">
-  <div class="mx-auto max-w-2xl text-center">
-    <p class="mt-8 text-lg font-medium text-pretty text-gray-500 sm:text-xl/8">Halaman ini sengaja dikosongkan</p>
-    <p class="mt-8 text-lg font-medium text-pretty text-gray-500 sm:text-xl/8">Untuk saat ini, silakan kunjungi <a class="text-base/7 font-semibold text-indigo-400" href="https://linktr.ee/rebornian48">halaman ini.</p>
-  </div>
-</div>
-</body>
 
+  <div class="rings"><span></span><span></span><span></span><span></span></div>
+  <div class="particles"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+
+  <div class="card">
+    <div class="logo">JKT48</div>
+    <div class="subtitle">Rebornian48</div>
+    <p class="message">Kamu akan dialihkan secara otomatis.<br>Tunggu sebentar ya…</p>
+    <div class="countdown"><span id="timer">4</span><small>detik lagi</small></div>
+    <div class="progress"><div class="progress-bar"></div></div>
+    <a class="link" href="https://jkt48.rebornian48.my.id">
+      Klik di sini jika tidak otomatis
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+    </a>
+  </div>
+
+  <script>
+    let t = 4;
+    const el = document.getElementById('timer');
+    const iv = setInterval(() => {
+      t--;
+      el.textContent = t;
+      if (t <= 0) {
+        clearInterval(iv);
+        window.location.href = 'https://jkt48.rebornian48.my.id';
+      }
+    }, 1000);
+  </script>
+</body>
 </html>
